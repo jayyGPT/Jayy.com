@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Jayy </title>
+  <meta name="description"
+    content="Jayendra Birhade — Computer Science undergraduate at IIT Delhi exploring AI/ML research, deep learning, and music technology." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#" class="nav-logo">Jayendra.B</a>
+      <button class="theme-toggle" id="themeToggle">Insert Coin (Light)</button>
+    </nav>
+
+    <!-- Intro -->
+    <div class="intro">
+      <div class="intro-text">
+        <h1>Hi.</h1>
+        <p>I'm a sophomore Computer Science student at <strong>IIT Delhi</strong>.</p>
+        <p>I spend most of my time researching AI/ML, exploring how machines understand data, and building scalable
+          systems. When I step away from the terminal, I'm usually experimenting with music production, harmonic theory,
+          or training models to generate chords.</p>
+        <p>This space is an archive of my work, experiments, and notes.</p>
+      </div>
+      <div class="intro-photo">
+        <img src="jayendra.jpg" alt="Jayendra" />
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section" id="experience">
+      <h2>// Experience</h2>
+      <div class="list-group">
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Sprix (Manabie Education)</div>
+            <div class="list-meta">
+              <span class="tag red">SWE Intern</span>
+              <span>Dec '25 — Present</span>
+            </div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Integrated Amazon Chime SDK for real-time multi-user audio/video/chat. Reduced chat and video latency
+                by 20% through optimized state management in React. Containerized the platform with Docker to reduce
+                onboarding time.</p>
+              <div class="tech">Stack: React.js, Node.js, Chime SDK, Docker</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> R.K. Globals</div>
+            <div class="list-meta">
+              <span class="tag blue">R&D Head</span>
+              <span>Jul '25 — Aug '25</span>
+            </div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Led R&D lifecycle for a Flutter-based investment platform. Integrated TradingView API for financial
+                charting. Engineered a WhatsApp automation bot achieving 95% query accuracy and automated KYC
+                verification to reduce onboarding time by 80%.</p>
+              <div class="tech">Stack: Flutter, Dart, TradingView API, WhatsApp API</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Research -->
+    <div class="section" id="research">
+      <h2>// Research</h2>
+      <div class="list-group">
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> MagFi — Indoor Localization</div>
+            <div class="list-meta"><span class="tag yellow">SURA / IITD</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Built under IIT Delhi's SURA program. Magnetic field indoor localization using LSTM/GRU/Transformer
+                models on magnetometer time-series data. Achieved 1.25m accuracy in GPS-denied environments.</p>
+              <div class="tech">Stack: PyTorch, LSTM, Signal Processing</div>
+              <a href="https://github.com/jayyGPT" target="_blank">View Paper ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> SNN Adversarial Robustness</div>
+            <div class="list-meta"><span class="tag blue">Ongoing</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Research with Prof. Bhaskar investigating certified adversarial robustness guarantees for Spiking
+                Neural Networks (SNNs), exploring formal verification methods.</p>
+              <div class="tech">Stack: Spiking Neural Networks, Formal Verification</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>// Projects</h2>
+      <div class="list-group">
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> PropAdmin Pro</div>
+            <div class="list-meta"><span class="tag red">Commercial</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Property management ERP with Flutter mobile client, MERN backend, real-time GPS tracking, WhatsApp
+                notifications, and automated multi-stage ticket workflows.</p>
+              <div class="tech">Stack: Flutter, React, MongoDB</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Time-Travelling FS</div>
+            <div class="list-meta"><span class="tag blue">Systems</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Git-inspired version control file system in C++ with branching, staging, commits, merging, and
+                rollback. Features O(1) commits and sub-ms rollbacks.</p>
+              <div class="tech">Stack: C++, Data Structures, Systems Design</div>
+              <a href="https://github.com/jayyGPT" target="_blank">Source Code ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Chord Creator (Music x AI)</div>
+            <div class="list-meta"><span class="tag yellow">Creative</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>A decoder-only Transformer trained on the 25GB MidiCaps dataset. It generates harmonic chord
+                progressions and allows mood/genre steering via control tokens. Built out of a passion for understanding
+                the mathematical structure of music theory.</p>
+              <div class="tech">Stack: PyTorch, Transformers, MIDI Processing</div>
+              <a href="https://chord-creator.vercel.app" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/jayyGPT" target="_blank">Source ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> BeatMap</div>
+            <div class="list-meta"><span class="tag red">Creative</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>A Next.js audio visualization app that integrates a CNN model to analyze rhythm and beats in real-time.
+                It maps audio frequencies to visual outputs.</p>
+              <div class="tech">Stack: Next.js, Web Audio API, CNN</div>
+              <a href="https://beat-map-seven.vercel.app" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Spotify Aside -->
+    <aside class="section" id="spotify-aside" style="margin-top: 40px; margin-bottom: 60px;">
+      <iframe data-testid="embed-iframe"
+        style="border-radius:0px; border: 1px solid var(--border-color); filter: grayscale(20%);"
+        src="https://open.spotify.com/embed/artist/6NnUnZeeFvUkenOmdx5VN0?utm_source=generator&theme=0&si=c1b6a0f230c8414b"
+        width="100%" height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </aside>
+
+    <!-- Skills & Tools -->
+    <div class="section" id="skills">
+      <h2>// Skills Inventory</h2>
+      <div class="list-group">
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Core Technologies</div>
+            <div class="list-meta"><span class="tag">Languages</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>Python, C++, JavaScript/TypeScript, Dart, SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Machine Learning & AI</div>
+            <div class="list-meta"><span class="tag red">Research</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>PyTorch, Scikit-learn, TensorFlow, HuggingFace, LSTMs, Transformers, CNNs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-header" onclick="toggleAccordion(this)">
+            <div class="list-title"><span class="list-icon">[+]</span> Engineering & Systems</div>
+            <div class="list-meta"><span class="tag blue">DevOps</span></div>
+          </div>
+          <div class="list-body">
+            <div class="list-content">
+              <p>React, Node.js, Flutter, Docker, AWS, LevelDB, Data Structures, Systems Design</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2>// Connections</h2>
+      <p>I'm open to interesting research collaborations and internship opportunities.</p>
+      <div class="footer-links">
+        <a href="mailto:cs1240891@cse.iitd.ac.in">Institute Email ↗</a>
+        <a href="mailto:jayendrabirhaade920@gmail.com">Personal Email ↗</a>
+        <a href="https://github.com/jayyGPT" target="_blank">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/jayendra-birhade-81b4562b2" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
